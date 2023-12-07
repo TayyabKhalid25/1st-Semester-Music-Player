@@ -2,5 +2,8 @@
 #include "Tayyab.h"
 #include "Wahaj.h"
 
+int main()
+{
+	
 
-
+}
