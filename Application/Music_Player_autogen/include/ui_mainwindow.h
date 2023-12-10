@@ -46,7 +46,14 @@ public:
             MainWindow->setObjectName("MainWindow");
         MainWindow->resize(700, 277);
         MainWindow->setAutoFillBackground(false);
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(30, 30, 30);"));
+        MainWindow->setStyleSheet(QString::fromUtf8("QMainWindow\n"
+"{\n"
+"background-color: rgb(30, 30, 30);\n"
+"}\n"
+"QMenuBar\n"
+"{\n"
+"background-color: rgb(44,193,96);\n"
+"}"));
         actionOpen = new QAction(MainWindow);
         actionOpen->setObjectName("actionOpen");
         QFont font;
@@ -77,7 +84,6 @@ public:
 "    margin-right: -5px;\n"
 "    border-radius: 7.5px;\n"
 "    border: 1px solid #EDEDED; /* Border color for a more defined look */\n"
-"    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */\n"
 "}\n"
 "\n"
 "QSlider::add-page:horizontal {\n"
@@ -88,9 +94,9 @@ public:
 "QSlider::sub-page:horizontal {\n"
 "    background: #1ED760;  /* Set the same background color as the groove for the rest of the slider */\n"
 "    border-radius: 3px;\n"
-"    margin-right: -1px;  /* Adjust"
-                        " the margin to ensure the transition between colors is smooth */\n"
-"}\n"
+"    margin-right: -1px;  /* Adjust the margin to ensure the transition between colors is smooth */\n"
+"}"
+                        "\n"
 ""));
         Seek->setMaximum(100);
         Seek->setOrientation(Qt::Horizontal);
