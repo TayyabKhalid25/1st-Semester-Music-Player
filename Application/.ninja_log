@@ -1,0 +1,9 @@
+# ninja log v5
+2	1644	7239273696022884	Music_Player_autogen/timestamp	a0a0633943bf4ac4
+2	1644	7239273696022884	Music_Player_autogen/mocs_compilation.cpp	a0a0633943bf4ac4
+2	1644	7239273696022884	C:/Users/Hassaan/Desktop/build-Music_Player-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/Music_Player_autogen/timestamp	a0a0633943bf4ac4
+2	1644	7239273696022884	C:/Users/Hassaan/Desktop/build-Music_Player-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/Music_Player_autogen/mocs_compilation.cpp	a0a0633943bf4ac4
+1655	8020	7239273761328483	CMakeFiles/Music_Player.dir/mainwindow.cpp.obj	c2e3a47aaa4fa3d7
+1645	8209	7239273762528057	CMakeFiles/Music_Player.dir/Music_Player_autogen/mocs_compilation.cpp.obj	c600a367727b1006
+1650	14657	7239273827826333	CMakeFiles/Music_Player.dir/main.cpp.obj	938a5251b5872859
+14665	15011	7239273831226581	Music_Player.exe	32178625ac1e027e
