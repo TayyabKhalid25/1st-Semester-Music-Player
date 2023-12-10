@@ -6,6 +6,10 @@
 #include "qaudio.h"
 #include "QAudioOutput"
 #include "QAudioOutput.h"
+#include <fstream>
+
+
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -17,7 +21,7 @@ MainWindow::MainWindow(QWidget *parent)
     audioOutput=new QAudioOutput;
     MPlayer->setAudioOutput(audioOutput);
 
-    ui->pushButton_PlayPause->setIcon(style()->standardIcon(QStyle::SP_MediaPause));
+    ui->pushButton_PlayPause->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
     ui->pushButton_SeekBackward->setIcon(style()->standardIcon(QStyle::SP_MediaSeekBackward));
     ui->pushButton_SeekForward->setIcon(style()->standardIcon(QStyle::SP_MediaSeekForward));
     ui->pushButton_Mute->setIcon(style()->standardIcon(QStyle::SP_MediaVolume));
@@ -27,6 +31,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(MPlayer,QMediaPlayer::positionChanged,this,&MainWindow::positionChanged);
 
     ui->Seek->setRange(0,MPlayer->duration()/1000);
+
+    std::ifstream fin("LastPlayed.txt");  // To ensure last file is available on startup
+    char Filename[200];
+    fin.getline(Filename,200);
+    fin.close();
+    QString name = Filename;
+    MPlayer->setSource(QUrl(name));
+    QFileInfo fileinfo(name);
+    ui->label->setText(fileinfo.baseName());
 }
 
 MainWindow::~MainWindow()
@@ -37,15 +50,18 @@ MainWindow::~MainWindow()
 void MainWindow::updateduration(quint64 duration)
 {
     QString timestr;
-    if(duration || Mduration)
+    if (duration || Mduration)
     {
-        QTime CurrentTime((duration/3600)%60,(duration /60)%60,duration%60,(duration*1000)%1000);
+        QTime CurrentTime((duration/3600)%60,(duration/60)%60,duration%60,(duration*1000)%1000);
         QTime totalTime((Mduration/3600)%60,(Mduration/60)%60,Mduration%60,(Mduration*1000)%1000);
         QString format="mm:ss";
-        if(Mduration>3600)
+        if(Mduration>3600)  // If audio file is larger than an hour, use hour format
             format="hh:mm:ss";
         ui->label_2->setText(CurrentTime.toString(format));
         ui->label_3->setText(totalTime.toString(format));
+        if (CurrentTime == totalTime){  // When song finishes, change button to play.
+            ui->pushButton_PlayPause->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
+        }
     }
 }
 
@@ -70,7 +86,10 @@ void MainWindow::on_actionOpen_triggered()
     MPlayer->setSource(QUrl(Filename));
     MPlayer->play();
     QFileInfo fileinfo(Filename);
-    ui->label->setText(fileinfo.fileName());
+    ui->label->setText(fileinfo.baseName());
+    std::ofstream fout("LastPlayed.txt");  // write last played file to txt for next time.
+    fout << Filename.toStdString();
+    fout.close();
 }
 
 void MainWindow::on_pushButton_PlayPause_clicked()
