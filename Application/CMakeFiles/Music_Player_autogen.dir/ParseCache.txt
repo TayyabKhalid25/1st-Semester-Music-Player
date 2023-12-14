@@ -993,6 +993,6 @@ C:/Users/Hassaan/Desktop/PF-Project/Music_Player/mainwindow.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wtypesbase.h
  mdp:C:/Users/Hassaan/Desktop/PF-Project/Application/Music_Player_autogen/moc_predefs.h
  mdp:C:/Users/Hassaan/Desktop/PF-Project/Music_Player/mainwindow.h
-C:/Users/Hassaan/Desktop/PF-Project/Music_Player/main.cpp
 C:/Users/Hassaan/Desktop/PF-Project/Music_Player/mainwindow.cpp
  uic:ui_mainwindow.h
+C:/Users/Hassaan/Desktop/PF-Project/Music_Player/main.cpp

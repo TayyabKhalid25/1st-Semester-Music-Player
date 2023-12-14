@@ -76,7 +76,7 @@ void MainWindow::selectSong()  // Determines what to do based on playback mode.
     if (isRepeatAll)
         on_pushButton_MediaForward_clicked();
     else if (isRepeatOne)
-        positionChanged(0);
+        PlaySong(playlistWidget->item(currentSong())->data(Qt::UserRole).toString());
     else if (isRandomPlay)
     {
         std::random_device rn;  // random num generator.
