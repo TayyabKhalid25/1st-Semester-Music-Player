@@ -17,7 +17,7 @@ set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
-
+        resource.rc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -46,7 +46,7 @@ endif()
 
 target_link_libraries(Music_Player PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 target_link_libraries(Music_Player PRIVATE Qt6::Multimedia)
-
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

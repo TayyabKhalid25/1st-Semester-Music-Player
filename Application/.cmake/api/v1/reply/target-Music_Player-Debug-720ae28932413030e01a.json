@@ -86,13 +86,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 47,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 48,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
@@ -377,11 +377,11 @@
 					"define" : "QT_CORE_LIB"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"define" : "QT_GUI_LIB"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"define" : "QT_MULTIMEDIA_LIB"
 				},
 				{
@@ -389,11 +389,11 @@
 					"define" : "QT_NEEDS_QMAIN"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
@@ -443,22 +443,22 @@
 					"path" : "C:/Qt/6.6.1/mingw_64/mkspecs/win32-g++"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.1/mingw_64/include/QtWidgets"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.1/mingw_64/include/QtGui"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.1/mingw_64/include/QtMultimedia"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.6.1/mingw_64/include/QtNetwork"
 				}
@@ -479,16 +479,120 @@
 				1,
 				2
 			]
+		},
+		{
+			"defines" : 
+			[
+				{
+					"backtrace" : 37,
+					"define" : "MINGW_HAS_SECURE_API=1"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 37,
+					"define" : "_WIN64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "C:/Users/Hassaan/Desktop/PF-Project/Application/Music_Player_autogen/include"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include/QtCore"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/mkspecs/win32-g++"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include/QtGui"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include/QtMultimedia"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.6.1/mingw_64/include/QtNetwork"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				4
+			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Music_Player_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Music_Player_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Music_Player_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Music_Player_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Music_Player::@6890427a1f51a3e7e1df",
@@ -520,12 +624,12 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "C:\\Qt\\6.6.1\\mingw_64\\lib\\libQt6Widgets.a",
+				"fragment" : "C:\\Qt\\6.6.1\\mingw_64\\lib\\libQt6Multimedia.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "C:\\Qt\\6.6.1\\mingw_64\\lib\\libQt6Multimedia.a",
+				"fragment" : "C:\\Qt\\6.6.1\\mingw_64\\lib\\libQt6Widgets.a",
 				"role" : "libraries"
 			},
 			{
@@ -615,7 +719,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				4
 			]
 		},
 		{
@@ -623,22 +728,22 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				6
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				4,
-				6
+				5,
+				7
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				8
 			]
 		}
 	],
@@ -667,6 +772,12 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 1,
+			"path" : "resource.rc",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,
