@@ -11,6 +11,8 @@ Our Project is a music application that combines various features to provide a c
 including playlist management, playback controls, and customization of playback modes. 
 It uses Qt framework inside Qt Creator IDE.
 
+https://github.com/user-attachments/assets/940df575-3ff9-40b0-b53f-fe33e06e0b02
+
 Features:
 - Interactive GUI.
 - Display of current playing song's name and duration.
